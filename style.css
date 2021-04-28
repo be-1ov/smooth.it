@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #6C5CE7;
+}
+
+.wrapper .logo {
+    background: url(logo.svg);
+    width: 565px;
+    height: 110px;
+}
+
+.wrapper .steps {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper .steps .step{
+    max-width: 30%;
+    display: flex;
+    font-weight: bold;
+    margin: 128px 0;
+    align-items: center;
+}
+
+.wrapper .steps .step .count{
+    font-size: 144px;
+    opacity: 25%;
+    margin-right: 16px;
+}
+
+.wrapper .steps .step .header{
+    font-size: 24px;
+}
+
+.wrapper .btn {
+    display: inline;
+    background: linear-gradient(135deg, #AAA3FF 0%, #9A93E9 100%);
+    box-shadow: -5px 5px 10px rgba(146, 140, 220, 0.2), 5px -5px 10px rgba(146, 140, 220, 0.2), -5px -5px 10px rgba(178, 171, 255, 0.9), 5px 5px 13px rgba(146, 140, 220, 0.9), inset 1px 1px 2px rgba(178, 171, 255, 0.3), inset -1px -1px 2px rgba(146, 140, 220, 0.5);
+    padding: 16px 48px;
+    cursor: pointer;
+    color: white;
+    transition: 1000ms;
+    font-size: 24px;
+
+}
+
+.wrapper .btn:hover {
+    background: linear-gradient(135deg, #9A93E8 0%, #AAA3FF 100%);
+    box-shadow: -5px 5px 10px rgba(146, 140, 220, 0.2), 5px -5px 10px rgba(146, 140, 220, 0.2), -5px -5px 10px rgba(178, 171, 255, 0.9), 5px 5px 13px rgba(146, 140, 220, 0.9), inset 1px 1px 2px rgba(178, 171, 255, 0.3), inset -1px -1px 2px rgba(146, 140, 220, 0.5);
+}

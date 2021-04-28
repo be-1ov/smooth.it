@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smooth.IT</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+    <script>
+      function CallPrint() {
+        var WinPrint = window.open(
+          "",
+          "",
+          "left=50,top=50,width=800,height=640,toolbar=0,scrollbars=1,status=0"
+        );
+        WinPrint.document.close();
+        WinPrint.focus();
+        WinPrint.print();
+      }
+
+      function init() {
+        let btn = document.getElementById("smooth");
+        btn.onclick = () => {
+          CallPrint();
+        };
+      }
+    </script>
+  </head>
+  <body onload="init()">
+    <div class="wrapper">
+      <div class="logo"></div>
+
+      <div class="steps">
+        <div class="step">
+          <p class="count">1</p>
+          <p class="header">put your document to printer slot</p>
+        </div>
+        <div class="step">
+          <p class="count">2</p>
+          <p class="header">click the button below</p>
+        </div>
+        <div class="step">
+          <p class="count">3</p>
+          <p class="header">choose the count of pages in your document & click print</p>
+        </div>
+      </div>
+      <div>
+        <div class="btn" id="smooth">Smooth.IT</div>
+      </div>
+    </div>
+  </body>
+</html>
